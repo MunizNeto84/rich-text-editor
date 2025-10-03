@@ -8,10 +8,13 @@ import { Component, signal } from '@angular/core';
 })
 export class App {
   protected readonly title = signal('client');
+
+  editorContent: string = '';
+
   format(command: string) {
     document.execCommand(command, false, undefined);
   }
   onContentChange(newContent: string) {
-    console.log(newContent);
+    this.editorContent = newContent;
   }
 }
