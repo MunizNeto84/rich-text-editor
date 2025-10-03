@@ -11,4 +11,7 @@ export class App {
   format(command: string) {
     document.execCommand(command, false, undefined);
   }
+  onContentChange(newContent: string) {
+    console.log(newContent);
+  }
 }

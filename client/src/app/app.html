@@ -6,4 +6,12 @@
   <button (click)="format('underline')"><u>U</u></button>
 </div>
 
-<div id="editArea" class="edit-area" contenteditable="true">Digite algo aqui...</div>
+<div
+  #editedArea
+  id="editArea"
+  class="edit-area"
+  contenteditable="true"
+  (input)="onContentChange(editedArea.innerHTML)"
+>
+  Digite algo aqui...
+</div>
