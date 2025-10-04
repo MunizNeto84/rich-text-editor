@@ -1,0 +1,13 @@
+.edit-area {
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-height: 200px;
+  outline: none;
+}
+
+.buttons-edit {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-bottom: none;
+}
